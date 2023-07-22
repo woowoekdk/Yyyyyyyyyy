@@ -39,6 +39,11 @@ sython2.start()
 sython3.start()
 sython4.start()
 sython5.start()
+sython6.start()
+sython7.start()
+sython8.start()
+sython9.start()
+sython10.start()
 
 
 c = requests.session()
@@ -3413,5 +3418,10 @@ sython2.run_until_disconnected()
 sython3.run_until_disconnected()
 sython4.run_until_disconnected()
 sython5.run_until_disconnected()
+sython6.run_until_disconnected()
+sython7.run_until_disconnected()
+sython8.run_until_disconnected()
+sython9.run_until_disconnected()
+sython10.run_until_disconnected()
 
 #code skip accumulate points by t.me.zzzzl1l thank you my bro
