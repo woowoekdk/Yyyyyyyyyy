@@ -3129,6 +3129,284 @@ async def OwnerStart(event):
         sendy = await sython5.send_message(event.chat_id,f"**تم الانضمام في القناة @{usercht}**")
 
 
+
+@sython6.on(events.NewMessage(outgoing=False, pattern='/point1'))
+async def _(event):
+    await event.reply("**جاري تجميع النقاط**")
+    await event.edit("**جاري تجميع النقاط**")
+    joinu = await sython6(JoinChannelRequest('saythonh'))
+    channel_entity = await sython6.get_entity(bot_username)
+    await sython6.send_message(bot_username, '/start')
+    await asyncio.sleep(4)
+    msg0 = await sython6.get_messages(bot_username, limit=1)
+    await msg0[0].click(2)
+    await asyncio.sleep(4)
+    msg1 = await sython6.get_messages(bot_username, limit=1)
+    await msg1[0].click(0)
+
+    chs = 1
+    for i in range(100):
+        await asyncio.sleep(4)
+
+        list = await sython6(GetHistoryRequest(peer=channel_entity, limit=1,
+                                               offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+        msgs = list.messages[0]
+        if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
+            await sython6.send_message(event.chat_id, f"**تم الانتهاء من التجميع | SY**")
+
+            break
+        url = msgs.reply_markup.rows[0].buttons[0].url
+        try:
+            try:
+                await sython6(JoinChannelRequest(url))
+            except:
+                bott = url.split('/')[-1]
+                await sython6(ImportChatInviteRequest(bott))
+            msg2 = await sython6.get_messages(bot_username, limit=1)
+            await msg2[0].click(text='تحقق')
+            chs += 1
+            await event.edit(f"**تم الانضمام في {chs} قناة**")
+        except:
+            msg2 = await sython6.get_messages(bot_username, limit=1)
+            await msg2[0].click(text='التالي')
+            chs += 1
+            await event.edit(f"**القناة رقم {chs}**")
+    await sython6.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
+
+
+
+
+
+@sython7.on(events.NewMessage(outgoing=False, pattern='/point1'))
+async def _(event):
+    await event.reply("**جاري تجميع النقاط**")
+    await event.edit("**جاري تجميع النقاط**")
+    joinu = await sython7(JoinChannelRequest('saythonh'))
+    channel_entity = await sython7.get_entity(bot_username)
+    await sython7.send_message(bot_username, '/start')
+    await asyncio.sleep(4)
+    msg0 = await sython7.get_messages(bot_username, limit=1)
+    await msg0[0].click(2)
+    await asyncio.sleep(4)
+    msg1 = await sython7.get_messages(bot_username, limit=1)
+    await msg1[0].click(0)
+
+    chs = 1
+    for i in range(100):
+        await asyncio.sleep(4)
+
+        list = await sython7(GetHistoryRequest(peer=channel_entity, limit=1,
+                                               offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+        msgs = list.messages[0]
+        if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
+            await sython7.send_message(event.chat_id, f"**تم الانتهاء من التجميع | SY**")
+
+            break
+        url = msgs.reply_markup.rows[0].buttons[0].url
+        try:
+            try:
+                await sython7(JoinChannelRequest(url))
+            except:
+                bott = url.split('/')[-1]
+                await sython7(ImportChatInviteRequest(bott))
+            msg2 = await sython7.get_messages(bot_username, limit=1)
+            await msg2[0].click(text='تحقق')
+            chs += 1
+            await event.edit(f"**تم الانضمام في {chs} قناة**")
+        except:
+            msg2 = await sython7.get_messages(bot_username, limit=1)
+            await msg2[0].click(text='التالي')
+            chs += 1
+            await event.edit(f"**القناة رقم {chs}**")
+    await sython6.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
+
+
+
+@sython8.on(events.NewMessage(outgoing=False, pattern='/point1'))
+async def _(event):
+    await event.reply("**جاري تجميع النقاط**")
+    await event.edit("**جاري تجميع النقاط**")
+    joinu = await sython8(JoinChannelRequest('saythonh'))
+    channel_entity = await sython8.get_entity(bot_username)
+    await sython8.send_message(bot_username, '/start')
+    await asyncio.sleep(4)
+    msg0 = await sython8.get_messages(bot_username, limit=1)
+    await msg0[0].click(2)
+    await asyncio.sleep(4)
+    msg1 = await sython8.get_messages(bot_username, limit=1)
+    await msg1[0].click(0)
+
+    chs = 1
+    for i in range(100):
+        await asyncio.sleep(4)
+
+        list = await sython8(GetHistoryRequest(peer=channel_entity, limit=1,
+                                               offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+        msgs = list.messages[0]
+        if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
+            await sython8.send_message(event.chat_id, f"**تم الانتهاء من التجميع | SY**")
+
+            break
+        url = msgs.reply_markup.rows[0].buttons[0].url
+        try:
+            try:
+                await sython8(JoinChannelRequest(url))
+            except:
+                bott = url.split('/')[-1]
+                await sython8(ImportChatInviteRequest(bott))
+            msg2 = await sython8.get_messages(bot_username, limit=1)
+            await msg2[0].click(text='تحقق')
+            chs += 1
+            await event.edit(f"**تم الانضمام في {chs} قناة**")
+        except:
+            msg2 = await sython8.get_messages(bot_username, limit=1)
+            await msg2[0].click(text='التالي')
+            chs += 1
+            await event.edit(f"**القناة رقم {chs}**")
+    await sython6.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
+
+
+
+@sython9.on(events.NewMessage(outgoing=False, pattern='/point1'))
+async def _(event):
+    await event.reply("**جاري تجميع النقاط**")
+    await event.edit("**جاري تجميع النقاط**")
+    joinu = await sython9(JoinChannelRequest('saythonh'))
+    channel_entity = await sython9.get_entity(bot_username)
+    await sython9.send_message(bot_username, '/start')
+    await asyncio.sleep(4)
+    msg0 = await sython9.get_messages(bot_username, limit=1)
+    await msg0[0].click(2)
+    await asyncio.sleep(4)
+    msg1 = await sython9.get_messages(bot_username, limit=1)
+    await msg1[0].click(0)
+
+    chs = 1
+    for i in range(100):
+        await asyncio.sleep(4)
+
+        list = await sython9(GetHistoryRequest(peer=channel_entity, limit=1,
+                                               offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+        msgs = list.messages[0]
+        if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
+            await sython9.send_message(event.chat_id, f"**تم الانتهاء من التجميع | SY**")
+
+            break
+        url = msgs.reply_markup.rows[0].buttons[0].url
+        try:
+            try:
+                await sython9(JoinChannelRequest(url))
+            except:
+                bott = url.split('/')[-1]
+                await sython9(ImportChatInviteRequest(bott))
+            msg2 = await sython9.get_messages(bot_username, limit=1)
+            await msg2[0].click(text='تحقق')
+            chs += 1
+            await event.edit(f"**تم الانضمام في {chs} قناة**")
+        except:
+            msg2 = await sython9.get_messages(bot_username, limit=1)
+            await msg2[0].click(text='التالي')
+            chs += 1
+            await event.edit(f"**القناة رقم {chs}**")
+    await sython6.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
+
+
+@sython10.on(events.NewMessage(outgoing=False, pattern='/point1'))
+async def _(event):
+    await event.reply("**جاري تجميع النقاط**")
+    await event.edit("**جاري تجميع النقاط**")
+    joinu = await sython10(JoinChannelRequest('saythonh'))
+    channel_entity = await sython10.get_entity(bot_username)
+    await sython10.send_message(bot_username, '/start')
+    await asyncio.sleep(4)
+    msg0 = await sython10.get_messages(bot_username, limit=1)
+    await msg0[0].click(2)
+    await asyncio.sleep(4)
+    msg1 = await sython10.get_messages(bot_username, limit=1)
+    await msg1[0].click(0)
+
+    chs = 1
+    for i in range(100):
+        await asyncio.sleep(4)
+
+        list = await sython10(GetHistoryRequest(peer=channel_entity, limit=1,
+                                               offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+        msgs = list.messages[0]
+        if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
+            await sython10.send_message(event.chat_id, f"**تم الانتهاء من التجميع | SY**")
+
+            break
+        url = msgs.reply_markup.rows[0].buttons[0].url
+        try:
+            try:
+                await sython10(JoinChannelRequest(url))
+            except:
+                bott = url.split('/')[-1]
+                await sython10(ImportChatInviteRequest(bott))
+            msg2 = await sython10.get_messages(bot_username, limit=1)
+            await msg2[0].click(text='تحقق')
+            chs += 1
+            await event.edit(f"**تم الانضمام في {chs} قناة**")
+        except:
+            msg2 = await sython10.get_messages(bot_username, limit=1)
+            await msg2[0].click(text='التالي')
+            chs += 1
+            await event.edit(f"**القناة رقم {chs}**")
+    await sython6.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
+
+
+
+@sython6.on(events.NewMessage(outgoing=False, pattern='/jn (.*)'))
+async def OwnerStart(event):
+    usercht = event.pattern_match.group(1)
+    sender = await event.get_sender()
+    if sender.id == ownerhson_id:
+        sendy = await sython6.send_message(event.chat_id,f"**جاري الانضمام في القناة @{usercht}**")
+        joinch = await sython6(JoinChannelRequest(usercht))
+        sendy = await sython6.send_message(event.chat_id,f"**تم الانضمام في القناة @{usercht}**")
+
+
+@sython8.on(events.NewMessage(outgoing=False, pattern='/jn (.*)'))
+async def OwnerStart(event):
+    usercht = event.pattern_match.group(1)
+    sender = await event.get_sender()
+    if sender.id == ownerhson_id:
+        sendy = await sython8.send_message(event.chat_id,f"**جاري الانضمام في القناة @{usercht}**")
+        joinch = await sython8(JoinChannelRequest(usercht))
+        sendy = await sython8.send_message(event.chat_id,f"**تم الانضمام في القناة @{usercht}**")
+
+
+@sython9.on(events.NewMessage(outgoing=False, pattern='/jn (.*)'))
+async def OwnerStart(event):
+    usercht = event.pattern_match.group(1)
+    sender = await event.get_sender()
+    if sender.id == ownerhson_id:
+        sendy = await sython9.send_message(event.chat_id,f"**جاري الانضمام في القناة @{usercht}**")
+        joinch = await sython9(JoinChannelRequest(usercht))
+        sendy = await sython9.send_message(event.chat_id,f"**تم الانضمام في القناة @{usercht}**")
+
+@sython10.on(events.NewMessage(outgoing=False, pattern='/jn (.*)'))
+async def OwnerStart(event):
+    usercht = event.pattern_match.group(1)
+    sender = await event.get_sender()
+    if sender.id == ownerhson_id:
+        sendy = await sython10.send_message(event.chat_id,f"**جاري الانضمام في القناة @{usercht}**")
+        joinch = await sython10(JoinChannelRequest(usercht))
+        sendy = await sython10.send_message(event.chat_id,f"**تم الانضمام في القناة @{usercht}**")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print("💠 Sython Userbot Running 💠")
 sython1.run_until_disconnected()
 sython2.run_until_disconnected()
