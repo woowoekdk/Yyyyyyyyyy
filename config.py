@@ -33,6 +33,27 @@ SESSION5 = os.environ.get("TERMUXXXXX")
 sython5 = TelegramClient(StringSession(session5), APP_ID, APP_HASH)
 
 
+session6 = os.environ.get("TERMUXXXXXX")
+SESSION6 = os.environ.get("TERMUXXXXXX")
+sython6 = TelegramClient(StringSession(session6), APP_ID, APP_HASH)
+
+
+session7 = os.environ.get("TERMUXXXXXXX")
+SESSION7 = os.environ.get("TERMUXXXXXXX")
+sython7 = TelegramClient(StringSession(session7), APP_ID, APP_HASH)
+
+
+session8 = os.environ.get("TERMUXXXXXXXX")
+SESSION8 = os.environ.get("TERMUXXXXXXXX")
+sython8 = TelegramClient(StringSession(session8), APP_ID, APP_HASH)
+
+session9 = os.environ.get("TERMUXXXXXXXXX")
+SESSION9 = os.environ.get("TERMUXXXXXXXXX")
+sython9 = TelegramClient(StringSession(session9), APP_ID, APP_HASH)
+
+session10 = os.environ.get("TERMUXXXXXXXXXX")
+SESSION10 = os.environ.get("TERMUXXXXXXXXXX")
+sython10 = TelegramClient(StringSession(session10), APP_ID, APP_HASH)
 
 ispay = ['yes']
 ispay2 = ['yes']
